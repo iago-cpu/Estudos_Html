@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            color: rgb(255, 255, 255);
+        }
+
+        h1{
+            font-size: 3em;
+        }
+
+        div:hover{
+            color: aqua;
+        }
+
+        div > iframe {
+            display: none;
+        }
+
+        div:hover > iframe{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste do hover</h1>
+    <div>
+        Passe o mouse aqui para ver o video
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CckXRuwTppk?si=L6ccV-5AuoeNmu2z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</body>
+</html>

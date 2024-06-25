@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famílias de fonte com CSS </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif; 
+            /*Nem sempre as fontes selecionadas estão presentes no dispositivo, portanto colocar elas desta forma faz com que Hajam tentativas na ordem listada. Neste caso sendo primeiro Arial, depois Helvetica e por fim a sans-serif (Sans-serif é um termo genérico)*/
+
+            /*Para mais info de fontes seguras: https://www.w3schools.com/cssref/css_websafe_fonts.php */
+
+            font-size: 1em;
+            /*Medidas absolutas:
+            cm, mm, in (polegada), px, pt, pc (pt, pc sao medidas para papel)
+            
+            
+            Medidas Relativas
+            em (Relativa ao tamanho atual), ex, rem, vw, vh, %
+            
+            (GERALMENTE 16px = 1em [Tamanho padrão])
+            px e em são as medidas recomendadas
+            */
+        }
+
+        h1{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            font-size: 3em;
+            font-style: italic;
+        
+        }
+
+        h2{
+            /* Shorthand fonte 
+               ("Mãozinha") 
+               Serve para condençar o estilo de fonte do h1
+               - font-style -> font-weight -> font-size -> font-family
+            
+                font: italic bold 1.5em 'system-ui'
+                ex:
+            */
+            font: italic bold 1.5em 'system-ui'
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae culpa ullam ipsa inventore eaque rem qui harum labore minus, facere mollitia unde voluptatem explicabo at cupiditate blanditiis, eos eligendi minima! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum incidunt deserunt eum eaque aspernatur officia! Reiciendis illo, delectus dolorum accusantium doloremque voluptas blanditiis earum incidunt est veritatis perspiciatis quos saepe.</p>
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto veniam molestias beatae quod velit sint deserunt nobis iure fugit cum, non eaque voluptas dignissimos. Libero reiciendis delectus dolor doloremque hic?</p>
+</html>

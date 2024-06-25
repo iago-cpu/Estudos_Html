@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+        /*  SELETORES PERSONALIZADOS
+        
+            #   =   id
+            .   =   class
+            :   =   pseudo-class
+            ::  =   pseudo-element
+            >   =   children    
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        a{
+            color: rgb(153, 5, 30);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: rgb(235, 35, 0);
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: darkgreen;
+        }
+
+        a::after{
+            color: gray;
+            text-decoration: none;
+            font-weight: normal;
+            content: '⚑';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <li><a href="https://youtu.be/aezstCBHOPQ?si=dqkIXp5qyH45SuuE" target="_blank">Hozier - Too Sweet (Official Lyric Video)</a></li>
+    <li><a href="https://youtu.be/0yfiXNa0Fog?si=UeKO19AAhMVdZVqs" target="_blank">Paysandu estourado</a></li>
+    <li><a href="https://www.youtube.com/live/jfKfPfyJRdk?si=1tkSlYoFvZLuXDmv"target="_blank">Lofi hip hop</a></li>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>
+        Tente abrir este site em dispositivos diferentes
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="midia/P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="midia/M.png" type="image/png">
+        <img src="midia/G.png" alt="img flexivel">
+    </picture>
+    <h1>Audios</h1>
+        <p>
+            Vamos aprender a tocar audios
+        </p>
+        <br>
+        <p>Vo nada</p>
+        <audio src="midia/audios/vou-nada.mp3" controls autoplay></audio>
+        <!-- MP3 WAV OGG -->
+        <br>
+        <p>Nossaaa</p>
+        <audio src="midia/audios/seu-madruga-nossa.mp3" controls autoplay></audio>
+
+        <br>
+        <h3>Too Sweet</h3>
+        <audio preload="metadata" autoplay controls>
+            <source src="midia/audios/Too Sweet.mp3" type="audio/mpeg">
+            <source src="midia/audios/Too Sweet.ogg" type="audio/ogg">
+            <source src="midia/audios/Too Sweet.wav" type="audio/wav">
+            <p>Infelizmente o seu navegador não consegue reproduzir áudio <a href="midia/audios/Too Sweet.mp3">Clique aqui para baixar o MP3</a>
+            </p>
+        </audio>
+        <br>
+</body>
+</html>
